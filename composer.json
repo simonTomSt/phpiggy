@@ -1,0 +1,17 @@
+{
+    "name": "simon/phpiggy",
+    "description": "A PHP app for tracking expenses.",
+    "authors": [
+        {
+            "name": "simonTomSt",
+            "email": "simontomst.github@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/Framework",
+            "App\\": "src/App"
+        }
+    }
+}
