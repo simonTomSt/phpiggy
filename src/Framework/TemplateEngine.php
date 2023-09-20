@@ -10,7 +10,7 @@ class TemplateEngine
 
     public function render(string $template, array $data = []): string
     {
-        extract($data, EXTR_SKIP);
+        extract(array_map(fn(mixed $d): mixed => escapeHTML($d), $data), EXTR_SKIP);
 
         ob_start();
 
